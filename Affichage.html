@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Affichage Vidéo</title>
+</head>
+<body>
+
+    <video controls autoplay loop width="640" height="360">
+        <!-- Zidna video/ Pisk el vidéo mawjouda wost dossier video -->
+        <source src="video/ma-video.mp4" type="video/mp4">
+        
+        <!-- Fallback -->
+        <object data="video/ma-video.swf" width="640" height="360">
+            <param name="movie" value="video/ma-video.swf">
+            <p>Votre navigateur ne supporte pas la vidéo. <a href="video/ma-video.mp4">Téléchargez la vidéo ici</a>.</p>
+        </object>
+    </video>
+
+</body>
+</html>

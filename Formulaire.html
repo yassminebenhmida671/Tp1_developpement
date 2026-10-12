@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'authentification</title>
+</head>
+<body>
+    <h3>Formulaire d'authentification</h3>
+    <form>
+        <div>
+            <label for="email">Email</label><br>
+            <!-- Utilisation de type="email" et d'une expression régulière pattern pour restreindre à "epi.com.tn" -->
+            <input type="email" id="email" name="email" placeholder="Email" pattern=".+@epi\.com\.tn" title="L'email doit se terminer par epi.com.tn" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label><br>
+            <!-- Le mot de passe doit contenir entre 6 et 8 caractères dont au moins un chiffre -->
+            <input type="password" id="password" name="password" placeholder="Password" pattern="(?=.*\d).{6,8}" title="Le mot de passe doit contenir entre 6 et 8 caractères dont au moins un chiffre" required>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Envoyer">
+        </div>
+    </form>
+
+</body>
+</html>
